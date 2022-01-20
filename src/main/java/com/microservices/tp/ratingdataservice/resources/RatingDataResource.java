@@ -14,7 +14,7 @@ public class RatingDataResource {
         return new Rating(movieId, 4);
     }
 
-    @RequestMapping("/user/{userId}")
+    @RequestMapping("/users/{userId}")
     public UserRating getUserRatings(@PathVariable("userId") String userId) {
         UserRating userRating = new UserRating();
         userRating.initData(userId);
